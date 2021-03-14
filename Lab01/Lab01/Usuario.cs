@@ -10,12 +10,14 @@ namespace Lab01
     {
         public string Nome;
         public int Idade;
-        public float Altura;
-        public float Peso;
-        public float Imc;
-        public float Meta;
+        public double Altura;
+        public double Peso;
+        public double Imc;
+        public double MetaUm;
+        public double MetaDois;
+        public string Mensagem;
 
-        public Usuario(string nome, int idade, float altura, float peso)
+        public Usuario(string nome, int idade, double altura, double peso)
         {
             this.Nome = nome;
             this.Idade = idade;
@@ -26,26 +28,34 @@ namespace Lab01
         public void IMC()
         {
             Imc = Peso / (Altura * Altura);
-
+                   
             if (Imc >= 18.5 && Imc <=24.9)
             {
-                Console.WriteLine("Parabéns — você está em seu peso normal!");
+                Mensagem = "Parabéns — você está em seu peso normal!";
             }
             else if (Imc >= 25 && Imc <= 29.9)
             {
-                Console.WriteLine("Você está acima de seu peso (sobrepeso).");
+                Mensagem = "Você está acima de seu peso (sobrepeso), seu peso deve estar entre esses dois: ";
+                MetaUm = Altura * Altura * 18.5;
+                MetaDois = Altura * Altura * 24.9;
             }
             else if (Imc >= 30 && Imc <= 34.9)
             {
-                Console.WriteLine("Obesidade grau I.");
+                Mensagem = "Obesidade grau I, seu peso deve estar entre esses dois: ";
+                MetaUm = Altura * Altura * 18.5;
+                MetaDois = Altura * Altura * 24.9;
             }
             else if (Imc >= 35 && Imc <= 39.9)
             {
-                Console.WriteLine("Obesidade grau II.");
+                Mensagem = "Obesidade grau II, seu peso deve estar entre esses dois: ";
+                MetaUm = Altura * Altura * 18.5;
+                MetaDois = Altura * Altura * 24.9;
             }
             else if (Imc >= 40)
             {
-                Console.WriteLine("Obesidade graus III e IV.");
+                Mensagem = "Obesidade graus III e IV, seu peso deve estar entre esses dois: ";
+                MetaUm = Altura * Altura * 18.5;
+                MetaDois = Altura * Altura * 24.9;
             }
         }
     }
