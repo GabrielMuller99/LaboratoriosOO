@@ -22,8 +22,16 @@ namespace Lab01
             Usuario usuario = new Usuario(nome, idade, altura, peso);
             usuario.IMC();
 
-            Console.WriteLine(usuario.Mensagem + "{0}kg e {1}kg", usuario.MetaUm, usuario.MetaDois);
-            Console.ReadLine();
+            if (usuario.Ideal == false)
+            {
+                Console.WriteLine(usuario.Mensagem + "{0}kg e {1}kg", usuario.MetaUm, usuario.MetaDois);
+                Console.ReadLine();
+            }
+            else
+            {
+                Console.WriteLine(usuario.Mensagem);
+                Console.ReadLine();
+            }
         }
     }
 }
