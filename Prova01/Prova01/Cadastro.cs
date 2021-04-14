@@ -59,6 +59,7 @@ namespace Prova01
                 return;
             }
         }
+
         public void AdicionarFornecedor(PessoaJuridica fornecedor)
         {
             Fornecedores.Add(fornecedor);
