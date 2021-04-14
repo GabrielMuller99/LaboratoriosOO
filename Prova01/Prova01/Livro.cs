@@ -36,7 +36,7 @@ namespace Prova01
             Console.WriteLine($"--Genero: {Genero}");
             Console.WriteLine($"--Autor: {Autor}");
             Console.WriteLine($"--Editora: {Editora}");
-            Console.WriteLine($"--Fornecedor: {Fornecedor}");
+            Console.WriteLine($"--Fornecedor: {Fornecedor.Nome}");
             Console.WriteLine($"--Preço de compra: {precoCompra}");
             Console.WriteLine($"--Preço de venda: {precoVenda}");
         }

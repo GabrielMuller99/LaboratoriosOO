@@ -49,9 +49,19 @@ namespace Prova01
             Console.WriteLine("-------------------------------------------------------------------------");
             Console.ReadLine();
 
+            cadastro.relacionarClientes();
+            Console.WriteLine("-------------------------------------------------------------------------");
+            Console.ReadLine();
+
+            cadastro.relacionarFornecedores();
+            Console.WriteLine("-------------------------------------------------------------------------");
+            Console.ReadLine();
+
             estoque.EntradaLivro(domcasmurro, 20);
             estoque.EntradaLivro(unity, 10);
             estoque.EntradaCaderno(caderno100, 50);
+            Console.ReadLine();
+            estoque.MostrarEstoque();
             Console.WriteLine("-------------------------------------------------------------------------");
             Console.ReadLine();
 
@@ -69,14 +79,6 @@ namespace Prova01
             estoque.VenderLivro(unity, 2, bobnelson);
             estoque.VenderLivro(unity, 4, testolfo);
             estoque.VenderLivro(unity, 4, beloteste);
-            Console.WriteLine("-------------------------------------------------------------------------");
-            Console.ReadLine();
-
-            cadastro.relacionarClientes();
-            Console.WriteLine("-------------------------------------------------------------------------");
-            Console.ReadLine();
-
-            cadastro.relacionarFornecedores();
             Console.WriteLine("-------------------------------------------------------------------------");
             Console.ReadLine();
 

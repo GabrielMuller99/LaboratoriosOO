@@ -20,7 +20,7 @@ namespace Prova01
             Console.WriteLine($"Caderno:");
             Console.WriteLine($"--ID: {Id}");
             Console.WriteLine($"--Quantidade de folhas: {quantidadeEstoque}");
-            Console.WriteLine($"--Fornecedor: {Fornecedor}");
+            Console.WriteLine($"--Fornecedor: {Fornecedor.Nome}");
             Console.WriteLine($"--Preço de compra: {precoCompra}");
             Console.WriteLine($"--Preço de venda: {precoVenda}");
         }

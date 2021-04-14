@@ -20,7 +20,7 @@ namespace Prova01
             Console.WriteLine($"Fornecedor: {Nome}");
             Console.WriteLine($"--ID: {Id}");
             Console.WriteLine($"--CNPJ: {CNPJ}");
-            Console.WriteLine($"--Endereço: {Endereco}");
+            Console.WriteLine($"--Endereço: {Endereco.Rua}, {Endereco.Numero}, {Endereco.Bairro.Nome}, {Endereco.Cidade.Nome}-{Endereco.Cidade.Estado.Sigla}");
             Console.WriteLine($"--Email: {Email}");
         }
     }

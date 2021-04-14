@@ -15,6 +15,15 @@ namespace Prova01
             Itens = new List<ItemLoja>();
         }
 
+        public void MostrarEstoque()
+        {
+            foreach (ItemLoja item in Itens)
+            {
+                item.MostrarDescricao();
+                Console.WriteLine();
+            }
+        }
+
         public void EntradaCaderno(Caderno item, int quantidade)
         {
             item.quantidadeEstoque += quantidade;
