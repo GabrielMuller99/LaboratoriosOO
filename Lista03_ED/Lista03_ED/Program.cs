@@ -94,18 +94,18 @@ namespace Lista03_ED
         {
             Stack<char> stack = new Stack<char>();
 
-            for (int i = 0; i < expression.Length; i++)
+            for (int i = 0; i < expression.Length; i++)         //percorre a expressão para achar os parenteses
             {
-                if (stack.Count == 0 && expression[i] == '(')
+                if (stack.Count == 0 && expression[i] == '(')   //se a pilha está vazia e for parenteses aberto, sera empilhado
                 {
                     stack.Push(expression[i]);
                     Console.Write(expression[i]);
                 }
-                else if (stack.Count == 0 && expression[i] == ')')
+                else if (stack.Count == 0 && expression[i] == ')')  //se a pilha está vazia e for parenteses fechado, da erro
                 {
                     Console.WriteLine("Os parênteses estão dispostos da forma errada!");
                 }
-                else if (expression[i] == '(' || expression[i] == ')')
+                else if (expression[i] == '(' || expression[i] == ')')  
                 {
                     if (stack.Peek() == '(' && expression[i] == ')')
                     {
